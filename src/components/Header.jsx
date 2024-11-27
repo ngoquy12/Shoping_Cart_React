@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import ListCart from "./ListCart";
+import { CartContext } from "../providers/GlobalState";
 
 export default function Header() {
   const [isShowCart, setIsShowCart] = useState(false);
+  const { carts } = useContext(CartContext);
 
   //   Ẩn hiện component ListCart
   const handleToggle = () => {
@@ -23,7 +25,7 @@ export default function Header() {
             className="cursor-pointer hover:text-gray-300 transition-all"
           />
           <div className="absolute -top-2 -right-2 bg-red-700 text-[12px] px-1 rounded-lg">
-            10
+            {carts.length > 9 ? "9+" : carts.length}
           </div>
 
           {/* Component ListCart */}

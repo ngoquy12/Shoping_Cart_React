@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "productName": "Điện thoại Samsung Galaxy S21",
+    "price": 20000000,
+    "stock": 10,
+    "image": "https://hoanghamobile.com/Uploads/2021/01/15/a2.png"
+  },
+  {
+    "id": 2,
+    "productName": "Điện thoại Iphone14 Promax",
+    "price": 25000000,
+    "stock": 10,
+    "image": "https://images.prestigeonline.com/wp-content/uploads/sites/6/2022/10/05004752/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-space-black-220907-geo-768x1075.jpg"
+  },
+  {
+    "id": 3,
+    "productName": "Điện thoại Samsung Galaxy S20",
+    "price": 20000000,
+    "stock": 10,
+    "image": "https://file.hstatic.net/1000238589/file/dien_thoai_samsung_galaxy_s21_fe_5g__6gb_-_128gb__d1b8fd531ef24903a16cbca1bd666b34.jpg"
+  },
+  {
+    "id": 4,
+    "productName": "Điện thoại Iphone11 Promax",
+    "price": 20000000,
+    "stock": 10,
+    "image": "https://tse3.mm.bing.net/th?id=OIP._PyrZLOuBlMUMA4xgL88KwHaIw&pid=Api&P=0&h=180"
+  },
+  {
+    "id": 5,
+    "productName": "Điện thoại Samsung Galaxy S22",
+    "price": 22000000,
+    "stock": 10,
+    "image": "https://tse4.mm.bing.net/th?id=OIP.ohbiNiNDgVPRGr96gs-mnAHaHa&pid=Api&P=0&h=180"
+  }
+]

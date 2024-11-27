@@ -1,7 +1,10 @@
 import { Button } from "antd";
-import React from "react";
+import React, { useContext } from "react";
+import { formatMoney } from "../utils/formatData";
+import { CartContext } from "../providers/GlobalState";
 
-export default function ProductCard() {
+export default function ProductCard({ product }) {
+  const { handleAddToCart } = useContext(CartContext);
   return (
     <>
       <li className="border rounded-md shadow-sm min-w-[200px]">
@@ -14,9 +17,13 @@ export default function ProductCard() {
         </div>
 
         <div className="p-5 flex flex-col gap-3 items-center">
-          <h3 className="font-semibold">Điện thoại Samsung Galaxy S21</h3>
-          <p>20.000.000 đ</p>
-          <Button type="primary" className="w-full h-9 z-30">
+          <h3 className="font-semibold">{product.productName}</h3>
+          <p>{formatMoney(product.price)}</p>
+          <Button
+            onClick={() => handleAddToCart(product)}
+            type="primary"
+            className="w-full h-9 z-30"
+          >
             Thêm vào giỏ hàng
           </Button>
         </div>
